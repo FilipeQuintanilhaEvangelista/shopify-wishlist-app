@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "dcfa662a75e1aa38cb3207ba98e70740"
+name = "wishlist-filipe"
+handle = "wishlist-filipe"
+application_url = "https://rm-sure-realm-directive.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "loja-teste-filipe.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://rm-sure-realm-directive.trycloudflare.com/auth/callback",
+  "https://rm-sure-realm-directive.trycloudflare.com/auth/shopify/callback",
+  "https://rm-sure-realm-directive.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
